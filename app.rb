@@ -23,8 +23,8 @@ end
 
 post '/named-cat' do
     p params
-    name = params[:cat]
-    erb(:index)
+    @name = params[:name]
+    erb :index
 end
 
-set :session_secret, "super_secret"
+#set :session_secret, "super_secret"
